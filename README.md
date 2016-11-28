@@ -1,1 +1,1 @@
-# meteor-sportradar: Meteor package wrapping SportRadar API.
+# meteor-stats: Meteor package wrapping SportRadar and Soccerama APIs.

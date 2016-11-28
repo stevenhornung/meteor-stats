@@ -1,7 +1,7 @@
 Package.describe({
-  name: 'meteor-sportradar',
+  name: 'meteor-stats',
   version: '1.0.0',
-  summary: 'Meteor package wrapping SportRadar API.',
+  summary: 'Meteor package wrapping SportRadar and Soccerama APIs.',
 });
 
 Package.on_use(function (api) {
@@ -19,14 +19,17 @@ Package.on_use(function (api) {
 
   api.addFiles([
     'lib/config.coffee',
-    'lib/index_golf.js',
-    'lib/index_mlb.coffee',
-    'lib/index_nba.js',
-    'lib/index_ncaamb.js',
-    'lib/index_nfl.js',
-    'lib/index_nhl.js',
+    'lib/mlb.coffee',
+    'lib/nfl.coffee',
+    'lib/epl.coffee',
+    'lib/bgfl.coffee',
+    'lib/laliga.coffee',
+    'lib/bundesliga.coffee',
+    'lib/ligue1.coffee',
+    'lib/seriea.coffee',
+    'lib/nba.coffee',
     'index.coffee'
   ], 'server');
 
-  api.export('SportRadar')
+  api.export('Stats')
 });

@@ -1,47 +1,80 @@
-@Config = {};
+@Config = {}
 
-@Config.nfl = {};
-@Config.nfl.access_level = 't';
-@Config.nfl.version = '1';
-@Config.nfl.apikey = '';
-@Config.nfl.format = 'json';
+@Config.nfl = {
+  access_level: 't',
+  version: '1',
+  apikey: '',
+  format: 'json'
+}
 
-@Config.nba = {};
-@Config.nba.access_level = 't';
-@Config.nba.version = '3';
-@Config.nba.apikey = '';
-@Config.nba.seasonID = '2015';
-@Config.nba.season = 'REG';
-@Config.nba.format = 'json';
+@Config.mlb = {
+  access_level: 't',
+  version: '5',
+  apikey: '',
+  season: 'REG',
+  format: 'json'
+}
 
-@Config.mlb = {};
-@Config.mlb.access_level = 't';
-@Config.mlb.version = '5';
-@Config.mlb.apikey = '';
-@Config.mlb.year = '2015';
-@Config.mlb.season = 'REG';
-@Config.mlb.format = 'json';
+@Config.epl = {
+  access_level: 't',
+  version: '2',
+  apikey: '',
+  league_group: 'eu',
+  category: 'England',
+  group: 'Premier League'
+  format: 'xml'
+}
 
-@Config.nhl = {};
-@Config.nhl.access_level = 't';
-@Config.nhl.version = '3';
-@Config.nhl.apikey = '';
-@Config.nhl.seasonID = '2015';
-@Config.nhl.season = 'REG';
-@Config.nhl.format = 'json';
+@Config.bgfl = {
+  version: 'v1.2',
+  apikey: '',
+  competitionId: '102',
+  seasonId: '686'
+}
 
-@Config.ncaamb = {};
-@Config.ncaamb.access_level = 't';
-@Config.ncaamb.version = '3';
-@Config.ncaamb.season = 'REG';
-@Config.ncaamb.apikey = '';
-@Config.ncaamb.year = '2015';
-@Config.ncaamb.format = 'json';
+@Config.laliga = {
+  access_level: 't',
+  version: '2',
+  apikey: '',
+  league_group: 'eu',
+  category: 'Spain',
+  group: 'Primera Division',
+  format: 'xml'
+}
 
-@Config.golf = {};
-@Config.golf.access_level = 't';
-@Config.golf.version = '1';
-@Config.golf.tour = 'pga';
-@Config.golf.apikey = '';
-@Config.golf.year = '2015';
-@Config.golf.format = 'json';
+@Config.bundesliga = {
+  access_level: 't',
+  version: '2',
+  apikey: '',
+  league_group: 'eu',
+  category: 'Germany',
+  group: 'Bundesliga',
+  format: 'xml'
+}
+
+@Config.ligue1 = {
+  access_level: 't',
+  version: '2',
+  apikey: '',
+  league_group: 'eu',
+  category: 'France',
+  group: 'Ligue 1',
+  format: 'xml'
+}
+
+@Config.seriea = {
+  access_level: 't',
+  version: '2',
+  apikey: '',
+  league_group: 'eu',
+  category: 'Italy',
+  group: 'Serie A',
+  format: 'xml'
+}
+
+@Config.nba = {
+  access_level: 't',
+  version: '3',
+  apikey: '',
+  format: 'json'
+}
